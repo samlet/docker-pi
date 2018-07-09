@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    image: 'node:6-alpine'
+    env_file:
+     - ${HOME}/.priv/api.env
+    environment:
+     - NODE_ENV=production
+     
